@@ -2,7 +2,7 @@
 
 * [Weights & Biases](README.md)
 * [Quickstart](quickstart.md)
-* [Examples](examples.md)
+* [Examples](examples/README.md)
 * [Library](library/README.md)
   * [wandb.init\(\)](library/init.md)
   * [wandb.config](library/config.md)
