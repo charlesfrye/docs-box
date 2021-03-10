@@ -1,28 +1,22 @@
-description: Log a dict to the global run's history.
-robots: noindex
-
-# ref.log
+# log
 
 <!-- Insert buttons and diff -->
 
-<table class="tfo-notebook-buttons tfo-api nocontent" align="left">
 
-</table>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/sdk/wandb_run.py">View source</a>
+
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/wandb_run.py">View source</a>
 
 
 
 Log a dict to the global run's history.
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>ref.log(
+<pre><code>log(
     data: Dict[str, Any],
     step: int = None,
     commit: bool = None,
     sync: bool = None
-) -> None
-</code></pre>
+) -> None</code></pre>
 
 
 
@@ -70,13 +64,12 @@ If you want to log more frequently than that it's better to aggregate
 the data on the client side or you may get degraded performance.
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Arguments</h2></th></tr>
+<table>
+<tr><th>Arguments</th></tr>
 
 <tr>
 <td>
-`row`
+<code>row</code>
 </td>
 <td>
 (dict, optional) A dict of serializable python objects i.e `str`,
@@ -84,7 +77,7 @@ the data on the client side or you may get degraded performance.
 </td>
 </tr><tr>
 <td>
-`commit`
+<code>commit</code>
 </td>
 <td>
 (boolean, optional) Save the metrics dict to the wandb server
@@ -94,7 +87,7 @@ metrics dict with the row argument and metrics won't be saved until
 </td>
 </tr><tr>
 <td>
-`step`
+<code>step</code>
 </td>
 <td>
 (integer, optional) The global step in processing. This persists
@@ -103,7 +96,7 @@ specified step.
 </td>
 </tr><tr>
 <td>
-`sync`
+<code>sync</code>
 </td>
 <td>
 (boolean, True) This argument is deprecated and currently doesn't
@@ -167,20 +160,19 @@ For more examples, see https://docs.wandb.com/library/log
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Raises</h2></th></tr>
+<table>
+<tr><th>Raises</th></tr>
 
 <tr>
 <td>
-`wandb.Error`
+<code>wandb.Error</code>
 </td>
 <td>
 if called before `wandb.init`
 </td>
 </tr><tr>
 <td>
-`ValueError`
+<code>ValueError</code>
 </td>
 <td>
 if invalid data is passed

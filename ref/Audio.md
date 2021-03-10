@@ -1,25 +1,19 @@
-description: Wandb class for audio clips.
-robots: noindex
-
-# ref.Audio
+# Audio
 
 <!-- Insert buttons and diff -->
 
-<table class="tfo-notebook-buttons tfo-api nocontent" align="left">
 
-</table>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/data_types.py">View source</a>
+
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
 
 
 
 Wandb class for audio clips.
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>ref.Audio(
+<pre><code>Audio(
     data_or_path, sample_rate=None, caption=None
-)
-</code></pre>
+)</code></pre>
 
 
 
@@ -27,13 +21,12 @@ Wandb class for audio clips.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Arguments</h2></th></tr>
+<table>
+<tr><th>Arguments</th></tr>
 
 <tr>
 <td>
-`data_or_path`
+<code>data_or_path</code>
 </td>
 <td>
 (string or numpy array) A path to an audio file
@@ -41,7 +34,7 @@ or a numpy array of audio data.
 </td>
 </tr><tr>
 <td>
-`sample_rate`
+<code>sample_rate</code>
 </td>
 <td>
 (int) Sample rate, required when passing in raw
@@ -49,7 +42,7 @@ numpy array of audio data.
 </td>
 </tr><tr>
 <td>
-`caption`
+<code>caption</code>
 </td>
 <td>
 (string) Caption to display with audio.
@@ -63,53 +56,45 @@ numpy array of audio data.
 
 <h3 id="durations"><code>durations</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/data_types.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>@classmethod</code>
+<pre><code>@classmethod</code>
 <code>durations(
     audio_list
-)
-</code></pre>
+)</code></pre>
 
 
 
 
 <h3 id="path_is_reference"><code>path_is_reference</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/data_types.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>@classmethod</code>
+<pre><code>@classmethod</code>
 <code>path_is_reference(
     path
-)
-</code></pre>
+)</code></pre>
 
 
 
 
 <h3 id="resolve_ref"><code>resolve_ref</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/data_types.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>resolve_ref()
-</code></pre>
+<pre><code>resolve_ref()</code></pre>
 
 
 
 
 <h3 id="sample_rates"><code>sample_rates</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/data_types.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>@classmethod</code>
+<pre><code>@classmethod</code>
 <code>sample_rates(
     audio_list
-)
-</code></pre>
+)</code></pre>
 
 
 
@@ -119,9 +104,8 @@ numpy array of audio data.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Class Variables</h2></th></tr>
+<table>
+<tr><th>Class Variables</th></tr>
 
 <tr>
 <td>

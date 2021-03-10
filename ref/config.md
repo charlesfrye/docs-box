@@ -1,23 +1,17 @@
-description: Config object
-robots: noindex
-
-# ref.config
+# config
 
 <!-- Insert buttons and diff -->
 
-<table class="tfo-notebook-buttons tfo-api nocontent" align="left">
 
-</table>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/sdk/wandb_config.py">View source</a>
+
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/wandb_config.py">View source</a>
 
 
 
 Config object
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>ref.config() -> None
-</code></pre>
+<pre><code>config() -> None</code></pre>
 
 
 

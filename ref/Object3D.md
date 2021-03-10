@@ -1,26 +1,20 @@
-description: Wandb class for 3D point clouds.
-robots: noindex
-
-# ref.Object3D
+# Object3D
 
 <!-- Insert buttons and diff -->
 
-<table class="tfo-notebook-buttons tfo-api nocontent" align="left">
 
-</table>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/sdk/data_types.py">View source</a>
+
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
 
 
 
 Wandb class for 3D point clouds.
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>ref.Object3D(
+<pre><code>Object3D(
     data_or_path: Union['np.ndarray', str, 'TextIO'],
     **kwargs
-) -> None
-</code></pre>
+) -> None</code></pre>
 
 
 
@@ -28,13 +22,12 @@ Wandb class for 3D point clouds.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Arguments</h2></th></tr>
+<table>
+<tr><th>Arguments</th></tr>
 
 <tr>
 <td>
-`data_or_path`
+<code>data_or_path</code>
 </td>
 <td>
 (numpy array, string, io)
@@ -57,9 +50,8 @@ The shape of the numpy array must be one of either:
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Class Variables</h2></th></tr>
+<table>
+<tr><th>Class Variables</th></tr>
 
 <tr>
 <td>

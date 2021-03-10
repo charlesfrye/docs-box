@@ -1,26 +1,20 @@
-description: Wandb class for arbitrary html
-robots: noindex
-
-# ref.Html
+# Html
 
 <!-- Insert buttons and diff -->
 
-<table class="tfo-notebook-buttons tfo-api nocontent" align="left">
 
-</table>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/sdk/data_types.py">View source</a>
+
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
 
 
 
 Wandb class for arbitrary html
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>ref.Html(
+<pre><code>Html(
     data: Union[str, 'TextIO'],
     inject: bool = True
-) -> None
-</code></pre>
+) -> None</code></pre>
 
 
 
@@ -28,20 +22,19 @@ Wandb class for arbitrary html
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Arguments</h2></th></tr>
+<table>
+<tr><th>Arguments</th></tr>
 
 <tr>
 <td>
-`data`
+<code>data</code>
 </td>
 <td>
 (string or io object) HTML to display in wandb
 </td>
 </tr><tr>
 <td>
-`inject`
+<code>inject</code>
 </td>
 <td>
 (boolean) Add a stylesheet to the HTML object.  If set
@@ -56,11 +49,9 @@ to False the HTML will pass through unchanged.
 
 <h3 id="inject_head"><code>inject_head</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/sdk/data_types.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>inject_head() -> None
-</code></pre>
+<pre><code>inject_head() -> None</code></pre>
 
 
 
@@ -70,9 +61,8 @@ to False the HTML will pass through unchanged.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Class Variables</h2></th></tr>
+<table>
+<tr><th>Class Variables</th></tr>
 
 <tr>
 <td>

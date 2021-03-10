@@ -1,26 +1,20 @@
-description: Wandb class for Molecular data
-robots: noindex
-
-# ref.Molecule
+# Molecule
 
 <!-- Insert buttons and diff -->
 
-<table class="tfo-notebook-buttons tfo-api nocontent" align="left">
 
-</table>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/sdk/data_types.py">View source</a>
+
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
 
 
 
 Wandb class for Molecular data
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>ref.Molecule(
+<pre><code>Molecule(
     data_or_path: Union[str, 'TextIO'],
     **kwargs
-) -> None
-</code></pre>
+) -> None</code></pre>
 
 
 
@@ -28,13 +22,12 @@ Wandb class for Molecular data
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Arguments</h2></th></tr>
+<table>
+<tr><th>Arguments</th></tr>
 
 <tr>
 <td>
-`data_or_path`
+<code>data_or_path</code>
 </td>
 <td>
 (string, io)
@@ -48,9 +41,8 @@ Molecule can be initialized from a file name or an io object.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Class Variables</h2></th></tr>
+<table>
+<tr><th>Class Variables</th></tr>
 
 <tr>
 <td>

@@ -1,25 +1,19 @@
-description: Marks a run as finished, and finishes uploading all data.
-robots: noindex
-
-# ref.join
+# join
 
 <!-- Insert buttons and diff -->
 
-<table class="tfo-notebook-buttons tfo-api nocontent" align="left">
 
-</table>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/sdk/wandb_run.py">View source</a>
+
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/wandb_run.py">View source</a>
 
 
 
 Marks a run as finished, and finishes uploading all data.
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>ref.join(
+<pre><code>join(
     exit_code: int = None
-) -> None
-</code></pre>
+) -> None</code></pre>
 
 
 

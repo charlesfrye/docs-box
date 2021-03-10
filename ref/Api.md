@@ -1,25 +1,19 @@
-description: Used for querying the wandb server.
-robots: noindex
-
-# ref.Api
+# Api
 
 <!-- Insert buttons and diff -->
 
-<table class="tfo-notebook-buttons tfo-api nocontent" align="left">
 
-</table>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/apis/public.py">View source</a>
+
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
 
 
 
 Used for querying the wandb server.
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>ref.Api(
+<pre><code>Api(
     overrides={}
-)
-</code></pre>
+)</code></pre>
 
 
 
@@ -36,13 +30,12 @@ Most common way to initialize
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Arguments</h2></th></tr>
+<table>
+<tr><th>Arguments</th></tr>
 
 <tr>
 <td>
-`overrides`
+<code>overrides</code>
 </td>
 <td>
 (dict) You can set `base_url` if you are using a wandb server
@@ -57,34 +50,33 @@ You can also set defaults for `entity`, `project`, and `run`.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Attributes</h2></th></tr>
+<table>
+<tr><th>Attributes</th></tr>
 
 <tr>
 <td>
-`api_key`
+<code>api_key</code>
 </td>
 <td>
 
 </td>
 </tr><tr>
 <td>
-`client`
+<code>client</code>
 </td>
 <td>
 
 </td>
 </tr><tr>
 <td>
-`default_entity`
+<code>default_entity</code>
 </td>
 <td>
 
 </td>
 </tr><tr>
 <td>
-`user_agent`
+<code>user_agent</code>
 </td>
 <td>
 
@@ -98,25 +90,22 @@ You can also set defaults for `entity`, `project`, and `run`.
 
 <h3 id="artifact"><code>artifact</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/apis/public.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>artifact(
+<pre><code>artifact(
     name, type=None
-)
-</code></pre>
+)</code></pre>
 
 Returns a single artifact by parsing path in the form `entity/project/run_id`.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2">Arguments</th></tr>
+<table>
+<tr><th>Arguments</th></tr>
 
 <tr>
 <td>
-`name`
+<code>name</code>
 </td>
 <td>
 (str) An artifact name. May be prefixed with entity/project. Valid names
@@ -127,7 +116,7 @@ digest
 </td>
 </tr><tr>
 <td>
-`type`
+<code>type</code>
 </td>
 <td>
 (str, optional) The type of artifact to fetch.
@@ -138,11 +127,10 @@ digest
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2">Returns</th></tr>
-<tr class="alt">
-<td colspan="2">
+<table>
+<tr><th>Returns</th></tr>
+<tr>
+<td>
 A `Artifact` object.
 </td>
 </tr>
@@ -153,63 +141,53 @@ A `Artifact` object.
 
 <h3 id="artifact_type"><code>artifact_type</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/apis/public.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>artifact_type(
+<pre><code>artifact_type(
     type_name, project=None
-)
-</code></pre>
+)</code></pre>
 
 
 
 
 <h3 id="artifact_types"><code>artifact_types</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/apis/public.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>artifact_types(
+<pre><code>artifact_types(
     project=None
-)
-</code></pre>
+)</code></pre>
 
 
 
 
 <h3 id="artifact_versions"><code>artifact_versions</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/apis/public.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>artifact_versions(
+<pre><code>artifact_versions(
     type_name, name, per_page=50
-)
-</code></pre>
+)</code></pre>
 
 
 
 
 <h3 id="create_run"><code>create_run</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/apis/public.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>create_run(
+<pre><code>create_run(
     **kwargs
-)
-</code></pre>
+)</code></pre>
 
 Create a new run
 
 
 <h3 id="flush"><code>flush</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/apis/public.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>flush()
-</code></pre>
+<pre><code>flush()</code></pre>
 
 The api object keeps a local cache of runs, so if the state of the run may
 change while executing your script you must clear the local cache with `api.flush()`
@@ -217,25 +195,22 @@ to get the latest values associated with the run.
 
 <h3 id="projects"><code>projects</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/apis/public.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>projects(
+<pre><code>projects(
     entity=None, per_page=200
-)
-</code></pre>
+)</code></pre>
 
 Get projects for a given entity.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2">Arguments</th></tr>
+<table>
+<tr><th>Arguments</th></tr>
 
 <tr>
 <td>
-`entity`
+<code>entity</code>
 </td>
 <td>
 (str) Name of the entity requested.  If None will fallback to
@@ -243,7 +218,7 @@ default entity passed to `Api`.  If no default entity, will raise a `ValueError`
 </td>
 </tr><tr>
 <td>
-`per_page`
+<code>per_page</code>
 </td>
 <td>
 (int) Sets the page size for query pagination.  None will use the default size.
@@ -255,11 +230,10 @@ Usually there is no reason to change this.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2">Returns</th></tr>
-<tr class="alt">
-<td colspan="2">
+<table>
+<tr><th>Returns</th></tr>
+<tr>
+<td>
 A `Projects` object which is an iterable collection of `Project` objects.
 </td>
 </tr>
@@ -270,40 +244,37 @@ A `Projects` object which is an iterable collection of `Project` objects.
 
 <h3 id="reports"><code>reports</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/apis/public.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>reports(
+<pre><code>reports(
     path=&#x27;&#x27;, name=None, per_page=50
-)
-</code></pre>
+)</code></pre>
 
 Get reports for a given project path.
 
 WARNING: This api is in beta and will likely change in a future release
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2">Arguments</th></tr>
+<table>
+<tr><th>Arguments</th></tr>
 
 <tr>
 <td>
-`path`
+<code>path</code>
 </td>
 <td>
 (str) path to project the report resides in, should be in the form: "entity/project"
 </td>
 </tr><tr>
 <td>
-`name`
+<code>name</code>
 </td>
 <td>
 (str) optional name of the report requested.
 </td>
 </tr><tr>
 <td>
-`per_page`
+<code>per_page</code>
 </td>
 <td>
 (int) Sets the page size for query pagination.  None will use the default size.
@@ -315,11 +286,10 @@ Usually there is no reason to change this.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2">Returns</th></tr>
-<tr class="alt">
-<td colspan="2">
+<table>
+<tr><th>Returns</th></tr>
+<tr>
+<td>
 A `Reports` object which is an iterable collection of `BetaReport` objects.
 </td>
 </tr>
@@ -330,25 +300,22 @@ A `Reports` object which is an iterable collection of `BetaReport` objects.
 
 <h3 id="run"><code>run</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/apis/public.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>run(
+<pre><code>run(
     path=&#x27;&#x27;
-)
-</code></pre>
+)</code></pre>
 
 Returns a single run by parsing path in the form entity/project/run_id.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2">Arguments</th></tr>
+<table>
+<tr><th>Arguments</th></tr>
 
 <tr>
 <td>
-`path`
+<code>path</code>
 </td>
 <td>
 (str) path to run in the form `entity/project/run_id`.
@@ -361,11 +328,10 @@ and if `api.project` is set this can just be the run_id.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2">Returns</th></tr>
-<tr class="alt">
-<td colspan="2">
+<table>
+<tr><th>Returns</th></tr>
+<tr>
+<td>
 A `Run` object.
 </td>
 </tr>
@@ -376,13 +342,11 @@ A `Run` object.
 
 <h3 id="runs"><code>runs</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/apis/public.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>runs(
+<pre><code>runs(
     path=&#x27;&#x27;, filters=None, order=&#x27;-created_at&#x27;, per_page=50
-)
-</code></pre>
+)</code></pre>
 
 Return a set of runs from a project that match the filters provided.
 
@@ -415,20 +379,19 @@ api.runs(path="my_entity/my_project", order="+summary_metrics.loss")
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2">Arguments</th></tr>
+<table>
+<tr><th>Arguments</th></tr>
 
 <tr>
 <td>
-`path`
+<code>path</code>
 </td>
 <td>
 (str) path to project, should be in the form: "entity/project"
 </td>
 </tr><tr>
 <td>
-`filters`
+<code>filters</code>
 </td>
 <td>
 (dict) queries for specific runs using the MongoDB query language.
@@ -440,7 +403,7 @@ see Reference for the language is at  https://docs.mongodb.com/manual/reference/
 </td>
 </tr><tr>
 <td>
-`order`
+<code>order</code>
 </td>
 <td>
 (str) Order can be `created_at`, `heartbeat_at`, `config.*.value`, or `summary_metrics.*`.
@@ -454,11 +417,10 @@ The default order is run.created_at from newest to oldest.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2">Returns</th></tr>
-<tr class="alt">
-<td colspan="2">
+<table>
+<tr><th>Returns</th></tr>
+<tr>
+<td>
 A `Runs` object, which is an iterable collection of `Run` objects.
 </td>
 </tr>
@@ -469,25 +431,22 @@ A `Runs` object, which is an iterable collection of `Run` objects.
 
 <h3 id="sweep"><code>sweep</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/apis/public.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>sweep(
+<pre><code>sweep(
     path=&#x27;&#x27;
-)
-</code></pre>
+)</code></pre>
 
 Returns a sweep by parsing path in the form `entity/project/sweep_id`.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2">Arguments</th></tr>
+<table>
+<tr><th>Arguments</th></tr>
 
 <tr>
 <td>
-`path`
+<code>path</code>
 </td>
 <td>
 (str, optional) path to sweep in the form entity/project/sweep_id.  If api.entity
@@ -500,11 +459,10 @@ this can just be the sweep_id.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2">Returns</th></tr>
-<tr class="alt">
-<td colspan="2">
+<table>
+<tr><th>Returns</th></tr>
+<tr>
+<td>
 A `Sweep` object.
 </td>
 </tr>
@@ -515,13 +473,11 @@ A `Sweep` object.
 
 <h3 id="sync_tensorboard"><code>sync_tensorboard</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/apis/public.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>sync_tensorboard(
+<pre><code>sync_tensorboard(
     root_dir, run_id=None, project=None, entity=None
-)
-</code></pre>
+)</code></pre>
 
 Sync a local directory containing tfevent files to wandb
 
@@ -531,9 +487,8 @@ Sync a local directory containing tfevent files to wandb
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Class Variables</h2></th></tr>
+<table>
+<tr><th>Class Variables</th></tr>
 
 <tr>
 <td>

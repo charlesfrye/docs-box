@@ -1,28 +1,22 @@
-description: Wandb representation of video.
-robots: noindex
-
-# ref.Video
+# Video
 
 <!-- Insert buttons and diff -->
 
-<table class="tfo-notebook-buttons tfo-api nocontent" align="left">
 
-</table>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/sdk/data_types.py">View source</a>
+
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
 
 
 
 Wandb representation of video.
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>ref.Video(
+<pre><code>Video(
     data_or_path: Union['np.ndarray', str, 'TextIO'],
     caption: Optional[str] = None,
     fps: int = 4,
     format: Optional[str] = None
-)
-</code></pre>
+)</code></pre>
 
 
 
@@ -30,13 +24,12 @@ Wandb representation of video.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Arguments</h2></th></tr>
+<table>
+<tr><th>Arguments</th></tr>
 
 <tr>
 <td>
-`data_or_path`
+<code>data_or_path</code>
 </td>
 <td>
 (numpy array, string, io)
@@ -50,21 +43,21 @@ Channels should be (time, channel, height, width) or
 </td>
 </tr><tr>
 <td>
-`caption`
+<code>caption</code>
 </td>
 <td>
 (string) caption associated with the video for display
 </td>
 </tr><tr>
 <td>
-`fps`
+<code>fps</code>
 </td>
 <td>
 (int) frames per second for video. Default is 4.
 </td>
 </tr><tr>
 <td>
-`format`
+<code>format</code>
 </td>
 <td>
 (string) format of video, necessary if initializing with path or io object.
@@ -78,11 +71,9 @@ Channels should be (time, channel, height, width) or
 
 <h3 id="encode"><code>encode</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/sdk/data_types.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>encode() -> None
-</code></pre>
+<pre><code>encode() -> None</code></pre>
 
 
 
@@ -92,9 +83,8 @@ Channels should be (time, channel, height, width) or
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Class Variables</h2></th></tr>
+<table>
+<tr><th>Class Variables</th></tr>
 
 <tr>
 <td>

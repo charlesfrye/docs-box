@@ -1,25 +1,19 @@
-description: Summary tracks single values for each run. By default, summary is set to the
-robots: noindex
-
-# ref.summary
+# summary
 
 <!-- Insert buttons and diff -->
 
-<table class="tfo-notebook-buttons tfo-api nocontent" align="left">
 
-</table>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/sdk/wandb_summary.py">View source</a>
+
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/wandb_summary.py">View source</a>
 
 
 
 Summary tracks single values for each run. By default, summary is set to the
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>ref.summary(
+<pre><code>summary(
     get_current_summary_callback: t.Callable
-)
-</code></pre>
+)</code></pre>
 
 
 

@@ -1,22 +1,17 @@
-description: Start a new tracked run with wandb.init().
-robots: noindex
-
-# ref.init
+# init
 
 <!-- Insert buttons and diff -->
 
-<table class="tfo-notebook-buttons tfo-api nocontent" align="left">
 
-</table>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/sdk/wandb_init.py">View source</a>
+
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/wandb_init.py">View source</a>
 
 
 
 Start a new tracked run with `wandb.init()`.
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>ref.init(
+<pre><code>init(
     job_type: Optional[str] = None,
     dir=None,
     config: Union[Dict, str, None] = None,
@@ -41,8 +36,7 @@ Start a new tracked run with `wandb.init()`.
     save_code=None,
     id=None,
     settings: Union[Settings, Dict[str, Any], None] = None
-) -> Union[Run, RunDisabled, None]
-</code></pre>
+) -> Union[Run, RunDisabled, None]</code></pre>
 
 
 
@@ -60,13 +54,12 @@ Call `wandb.init()` to start a run before logging data with `wandb.log()`.
 with wandb.run.
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Arguments</h2></th></tr>
+<table>
+<tr><th>Arguments</th></tr>
 
 <tr>
 <td>
-`project`
+<code>project</code>
 </td>
 <td>
 (str, optional) The name of the project where you're sending
@@ -75,7 +68,7 @@ the new run. If the project is not specified, the run is put in an
 </td>
 </tr><tr>
 <td>
-`entity`
+<code>entity</code>
 </td>
 <td>
 (str, optional) An entity is a username or team name where
@@ -89,7 +82,7 @@ new projects".
 </td>
 </tr><tr>
 <td>
-`config`
+<code>config</code>
 </td>
 <td>
 (dict, argparse, absl.flags, str, optional)
@@ -105,7 +98,7 @@ that file into the wandb.config object.
 </td>
 </tr><tr>
 <td>
-`save_code`
+<code>save_code</code>
 </td>
 <td>
 (bool, optional) Turn this on to save the main script or
@@ -116,7 +109,7 @@ in [Settings](wandb.ai/settings).
 </td>
 </tr><tr>
 <td>
-`group`
+<code>group</code>
 </td>
 <td>
 (str, optional) Specify a group to organize individual runs into
@@ -129,7 +122,7 @@ on and off in the UI. For more details, see
 </td>
 </tr><tr>
 <td>
-`job_type`
+<code>job_type</code>
 </td>
 <td>
 (str, optional) Specify the type of run, which is useful when
@@ -140,7 +133,7 @@ similar runs together in the UI so you can compare apples to apples.
 </td>
 </tr><tr>
 <td>
-`tags`
+<code>tags</code>
 </td>
 <td>
 (list, optional) A list of strings, which will populate the list
@@ -151,7 +144,7 @@ down to just runs with a specific tag.
 </td>
 </tr><tr>
 <td>
-`name`
+<code>name</code>
 </td>
 <td>
 (str, optional) A short display name for this run, which is how
@@ -163,7 +156,7 @@ save your hyperparameters, we recommend saving those in config.
 </td>
 </tr><tr>
 <td>
-`notes`
+<code>notes</code>
 </td>
 <td>
 (str, optional) A longer description of the run, like a -m commit
@@ -172,7 +165,7 @@ ran this run.
 </td>
 </tr><tr>
 <td>
-`dir`
+<code>dir</code>
 </td>
 <td>
 (str, optional) An absolute path to a directory where metadata will
@@ -182,7 +175,7 @@ the ./wandb directory.
 </td>
 </tr><tr>
 <td>
-`sync_tensorboard`
+<code>sync_tensorboard</code>
 </td>
 <td>
 (bool, optional) Whether to copy all TensorBoard logs
@@ -210,7 +203,7 @@ See https://docs.wandb.com/library/advanced/resuming for more.
 </td>
 </tr><tr>
 <td>
-`reinit`
+<code>reinit</code>
 </td>
 <td>
 (bool, optional) Allow multiple wandb.init() calls in the same
@@ -218,7 +211,7 @@ process. (default: False)
 </td>
 </tr><tr>
 <td>
-`magic`
+<code>magic</code>
 </td>
 <td>
 (bool, dict, or str, optional) The bool controls whether we try to
@@ -228,7 +221,7 @@ You can also pass a dict, json string, or yaml filename.
 </td>
 </tr><tr>
 <td>
-`config_exclude_keys`
+<code>config_exclude_keys</code>
 </td>
 <td>
 (list, optional) string keys to exclude from
@@ -236,7 +229,7 @@ You can also pass a dict, json string, or yaml filename.
 </td>
 </tr><tr>
 <td>
-`config_include_keys`
+<code>config_include_keys</code>
 </td>
 <td>
 (list, optional) string keys to include in
@@ -244,7 +237,7 @@ wandb.config.
 </td>
 </tr><tr>
 <td>
-`anonymous`
+<code>anonymous</code>
 </td>
 <td>
 (str, optional) Controls anonymous data logging. Options:
@@ -259,7 +252,7 @@ signed-up user account.
 </td>
 </tr><tr>
 <td>
-`mode`
+<code>mode</code>
 </td>
 <td>
 (str, optional) Can be "online", "offline" or "disabled". Defaults to
@@ -267,7 +260,7 @@ online.
 </td>
 </tr><tr>
 <td>
-`allow_val_change`
+<code>allow_val_change</code>
 </td>
 <td>
 (bool, optional) Whether to allow config values to
@@ -278,7 +271,7 @@ wandb.log() instead. (default: False in scripts, True in Jupyter)
 </td>
 </tr><tr>
 <td>
-`force`
+<code>force</code>
 </td>
 <td>
 (bool, optional) If True, this crashes the script if a user isn't
@@ -287,7 +280,7 @@ mode if a user isn't logged in to W&B. (default: False)
 </td>
 </tr><tr>
 <td>
-`sync_tensorboard`
+<code>sync_tensorboard</code>
 </td>
 <td>
 (bool, optional) Synchronize wandb logs from tensorboard or
@@ -295,7 +288,7 @@ tensorboardX and saves the relevant events file. Defaults to false.
 </td>
 </tr><tr>
 <td>
-`monitor_gym`
+<code>monitor_gym</code>
 </td>
 <td>
 (bool, optional) automatically logs videos of environment when
@@ -304,7 +297,7 @@ See https://docs.wandb.com/library/integrations/openai-gym
 </td>
 </tr><tr>
 <td>
-`id`
+<code>id</code>
 </td>
 <td>
 (str, optional) A unique ID for this run, used for Resuming. It must
@@ -337,13 +330,12 @@ for x in range(10):
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Raises</h2></th></tr>
+<table>
+<tr><th>Raises</th></tr>
 
 <tr>
 <td>
-`Exception`
+<code>Exception</code>
 </td>
 <td>
 if problem.
@@ -354,11 +346,10 @@ if problem.
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Returns</h2></th></tr>
-<tr class="alt">
-<td colspan="2">
+<table>
+<tr><th>Returns</th></tr>
+<tr>
+<td>
 A `Run` object.
 </td>
 </tr>

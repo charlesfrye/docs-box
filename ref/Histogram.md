@@ -1,27 +1,21 @@
-description: wandb class for histograms.
-robots: noindex
-
-# ref.Histogram
+# Histogram
 
 <!-- Insert buttons and diff -->
 
-<table class="tfo-notebook-buttons tfo-api nocontent" align="left">
 
-</table>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/sdk/data_types.py">View source</a>
+
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
 
 
 
 wandb class for histograms.
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>ref.Histogram(
+<pre><code>Histogram(
     sequence: Optional[Sequence] = None,
     np_histogram: Optional['NumpyHistogram'] = None,
     num_bins: int = 64
-) -> None
-</code></pre>
+) -> None</code></pre>
 
 
 
@@ -46,27 +40,26 @@ wandb.Histogram(np_histogram=hist)
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Arguments</h2></th></tr>
+<table>
+<tr><th>Arguments</th></tr>
 
 <tr>
 <td>
-`sequence`
+<code>sequence</code>
 </td>
 <td>
 (array_like) input data for histogram
 </td>
 </tr><tr>
 <td>
-`np_histogram`
+<code>np_histogram</code>
 </td>
 <td>
 (numpy histogram) alternative input of a precoomputed histogram
 </td>
 </tr><tr>
 <td>
-`num_bins`
+<code>num_bins</code>
 </td>
 <td>
 (int) Number of bins for the histogram.  The default number of bins
@@ -80,20 +73,19 @@ is 64.  The maximum number of bins is 512
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Attributes</h2></th></tr>
+<table>
+<tr><th>Attributes</th></tr>
 
 <tr>
 <td>
-`bins`
+<code>bins</code>
 </td>
 <td>
 ([float]) edges of bins
 </td>
 </tr><tr>
 <td>
-`histogram`
+<code>histogram</code>
 </td>
 <td>
 ([int]) number of elements falling in each bin
@@ -106,9 +98,8 @@ is 64.  The maximum number of bins is 512
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Class Variables</h2></th></tr>
+<table>
+<tr><th>Class Variables</th></tr>
 
 <tr>
 <td>

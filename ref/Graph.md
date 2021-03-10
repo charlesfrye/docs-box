@@ -1,25 +1,19 @@
-description: Wandb class for graphs
-robots: noindex
-
-# ref.Graph
+# Graph
 
 <!-- Insert buttons and diff -->
 
-<table class="tfo-notebook-buttons tfo-api nocontent" align="left">
 
-</table>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/data_types.py">View source</a>
+
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
 
 
 
 Wandb class for graphs
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>ref.Graph(
+<pre><code>Graph(
     format=&#x27;keras&#x27;
-)
-</code></pre>
+)</code></pre>
 
 
 
@@ -42,64 +36,54 @@ Import a keras model:
 
 <h3 id="add_edge"><code>add_edge</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/data_types.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>add_edge(
+<pre><code>add_edge(
     from_node, to_node
-)
-</code></pre>
+)</code></pre>
 
 
 
 
 <h3 id="add_node"><code>add_node</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/data_types.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>add_node(
+<pre><code>add_node(
     node=None, **node_kwargs
-)
-</code></pre>
+)</code></pre>
 
 
 
 
 <h3 id="from_keras"><code>from_keras</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/data_types.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>@classmethod</code>
+<pre><code>@classmethod</code>
 <code>from_keras(
     model
-)
-</code></pre>
+)</code></pre>
 
 
 
 
 <h3 id="pprint"><code>pprint</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/data_types.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>pprint()
-</code></pre>
+<pre><code>pprint()</code></pre>
 
 
 
 
 <h3 id="__getitem__"><code>__getitem__</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/library/data_types.py">View source</a>
+<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
 
-<pre class="devsite-click-to-copy prettyprint lang-py tfo-signature-link">
-<code>__getitem__(
+<pre><code>__getitem__(
     nid
-)
-</code></pre>
+)</code></pre>
 
 
 
@@ -109,9 +93,8 @@ Import a keras model:
 
 
 <!-- Tabular view -->
- <table class="responsive fixed orange">
-<colgroup><col width="214px"><col></colgroup>
-<tr><th colspan="2"><h2 class="add-link">Class Variables</h2></th></tr>
+<table>
+<tr><th>Class Variables</th></tr>
 
 <tr>
 <td>
