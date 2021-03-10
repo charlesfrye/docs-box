@@ -3,9 +3,8 @@
 <!-- Insert buttons and diff -->
 
 
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/master/wandb/sdk/data_types.py#L1466-L1927)
 
-
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
 
 
 
@@ -63,7 +62,7 @@ the data format and converts it.
 
 <h3 id="all_boxes"><code>all_boxes</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/sdk/data_types.py#L1884-L1905">View source</a>
 
 <pre><code>@classmethod</code>
 <code>all_boxes(
@@ -78,7 +77,7 @@ the data format and converts it.
 
 <h3 id="all_captions"><code>all_captions</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/sdk/data_types.py#L1907-L1911">View source</a>
 
 <pre><code>@classmethod</code>
 <code>all_captions(
@@ -90,7 +89,7 @@ the data format and converts it.
 
 <h3 id="all_masks"><code>all_masks</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/sdk/data_types.py#L1861-L1882">View source</a>
 
 <pre><code>@classmethod</code>
 <code>all_masks(
@@ -105,7 +104,7 @@ the data format and converts it.
 
 <h3 id="guess_mode"><code>guess_mode</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/sdk/data_types.py#L1755-L1769">View source</a>
 
 <pre><code>guess_mode(
     data: "np.ndarray"
@@ -116,7 +115,7 @@ Guess what type of image the np.array is representing
 
 <h3 id="to_uint8"><code>to_uint8</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/sdk/data_types.py#L1771-L1793">View source</a>
 
 <pre><code>@classmethod</code>
 <code>to_uint8(

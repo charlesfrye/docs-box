@@ -3,9 +3,8 @@
 <!-- Insert buttons and diff -->
 
 
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/master/wandb/sdk/data_types.py#L1930-L1977)
 
-
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
 
 
 
@@ -40,7 +39,7 @@ matplotlib or plotly figure
 
 <h3 id="make_plot_media"><code>make_plot_media</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/sdk/data_types.py#L1938-L1946">View source</a>
 
 <pre><code>@classmethod</code>
 <code>make_plot_media(

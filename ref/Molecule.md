@@ -3,9 +3,8 @@
 <!-- Insert buttons and diff -->
 
 
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/master/wandb/sdk/data_types.py#L722-L814)
 
-
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
 
 
 

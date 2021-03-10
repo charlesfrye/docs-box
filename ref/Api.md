@@ -3,9 +3,8 @@
 <!-- Insert buttons and diff -->
 
 
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/master/wandb/apis/public.py#L184-L553)
 
-
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
 
 
 
@@ -90,7 +89,7 @@ You can also set defaults for `entity`, `project`, and `run`.
 
 <h3 id="artifact"><code>artifact</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/apis/public.py#L532-L553">View source</a>
 
 <pre><code>artifact(
     name, type=None
@@ -141,7 +140,7 @@ A `Artifact` object.
 
 <h3 id="artifact_type"><code>artifact_type</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/apis/public.py#L521-L524">View source</a>
 
 <pre><code>artifact_type(
     type_name, project=None
@@ -152,7 +151,7 @@ A `Artifact` object.
 
 <h3 id="artifact_types"><code>artifact_types</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/apis/public.py#L516-L519">View source</a>
 
 <pre><code>artifact_types(
     project=None
@@ -163,7 +162,7 @@ A `Artifact` object.
 
 <h3 id="artifact_versions"><code>artifact_versions</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/apis/public.py#L526-L530">View source</a>
 
 <pre><code>artifact_versions(
     type_name, name, per_page=50
@@ -174,7 +173,7 @@ A `Artifact` object.
 
 <h3 id="create_run"><code>create_run</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/apis/public.py#L246-L250">View source</a>
 
 <pre><code>create_run(
     **kwargs
@@ -185,7 +184,7 @@ Create a new run
 
 <h3 id="flush"><code>flush</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/apis/public.py#L301-L307">View source</a>
 
 <pre><code>flush()</code></pre>
 
@@ -195,7 +194,7 @@ to get the latest values associated with the run.
 
 <h3 id="projects"><code>projects</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/apis/public.py#L364-L386">View source</a>
 
 <pre><code>projects(
     entity=None, per_page=200
@@ -244,7 +243,7 @@ A `Projects` object which is an iterable collection of `Project` objects.
 
 <h3 id="reports"><code>reports</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/apis/public.py#L388-L419">View source</a>
 
 <pre><code>reports(
     path=&#x27;&#x27;, name=None, per_page=50
@@ -300,7 +299,7 @@ A `Reports` object which is an iterable collection of `BetaReport` objects.
 
 <h3 id="run"><code>run</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/apis/public.py#L480-L496">View source</a>
 
 <pre><code>run(
     path=&#x27;&#x27;
@@ -342,7 +341,7 @@ A `Run` object.
 
 <h3 id="runs"><code>runs</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/apis/public.py#L421-L478">View source</a>
 
 <pre><code>runs(
     path=&#x27;&#x27;, filters=None, order=&#x27;-created_at&#x27;, per_page=50
@@ -431,7 +430,7 @@ A `Runs` object, which is an iterable collection of `Run` objects.
 
 <h3 id="sweep"><code>sweep</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/apis/public.py#L498-L514">View source</a>
 
 <pre><code>sweep(
     path=&#x27;&#x27;
@@ -473,7 +472,7 @@ A `Sweep` object.
 
 <h3 id="sync_tensorboard"><code>sync_tensorboard</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/apis/public.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/apis/public.py#L252-L273">View source</a>
 
 <pre><code>sync_tensorboard(
     root_dir, run_id=None, project=None, entity=None

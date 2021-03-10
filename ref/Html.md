@@ -3,9 +3,8 @@
 <!-- Insert buttons and diff -->
 
 
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/master/wandb/sdk/data_types.py#L817-L907)
 
-
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
 
 
 
@@ -49,7 +48,7 @@ to False the HTML will pass through unchanged.
 
 <h3 id="inject_head"><code>inject_head</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/sdk/data_types.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/sdk/data_types.py#L859-L874">View source</a>
 
 <pre><code>inject_head() -> None</code></pre>
 

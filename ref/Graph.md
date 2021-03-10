@@ -3,9 +3,8 @@
 <!-- Insert buttons and diff -->
 
 
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/master/wandb/data_types.py#L851-L1009)
 
-
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
 
 
 
@@ -36,7 +35,7 @@ Import a keras model:
 
 <h3 id="add_edge"><code>add_edge</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/data_types.py#L935-L939">View source</a>
 
 <pre><code>add_edge(
     from_node, to_node
@@ -47,7 +46,7 @@ Import a keras model:
 
 <h3 id="add_node"><code>add_node</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/data_types.py#L921-L933">View source</a>
 
 <pre><code>add_node(
     node=None, **node_kwargs
@@ -58,7 +57,7 @@ Import a keras model:
 
 <h3 id="from_keras"><code>from_keras</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/data_types.py#L941-L970">View source</a>
 
 <pre><code>@classmethod</code>
 <code>from_keras(
@@ -70,7 +69,7 @@ Import a keras model:
 
 <h3 id="pprint"><code>pprint</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/data_types.py#L915-L919">View source</a>
 
 <pre><code>pprint()</code></pre>
 
@@ -79,7 +78,7 @@ Import a keras model:
 
 <h3 id="__getitem__"><code>__getitem__</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/data_types.py#L912-L913">View source</a>
 
 <pre><code>__getitem__(
     nid

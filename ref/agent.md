@@ -3,9 +3,8 @@
 <!-- Insert buttons and diff -->
 
 
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/master/wandb/wandb_agent.py#L525-L571)
 
-
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/wandb_agent.py">View source</a>
 
 
 

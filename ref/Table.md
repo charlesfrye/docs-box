@@ -3,9 +3,8 @@
 <!-- Insert buttons and diff -->
 
 
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/master/wandb/data_types.py#L109-L419)
 
-
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
 
 
 
@@ -61,7 +60,7 @@ allow_mixed_types (bool): Determines if columns are allowed to have mixed types 
 
 <h3 id="add_data"><code>add_data</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/data_types.py#L285-L294">View source</a>
 
 <pre><code>add_data(
     *data
@@ -72,7 +71,7 @@ Add a row of data to the table. Argument length should match column length
 
 <h3 id="add_row"><code>add_row</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/data_types.py#L281-L283">View source</a>
 
 <pre><code>add_row(
     *row
@@ -83,7 +82,7 @@ Add a row of data to the table. Argument length should match column length
 
 <h3 id="cast"><code>cast</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/data_types.py#L222-L239">View source</a>
 
 <pre><code>cast(
     col_name, dtype, optional=False
@@ -94,7 +93,7 @@ Add a row of data to the table. Argument length should match column length
 
 <h3 id="iterrows"><code>iterrows</code></h3>
 
-<a target="_blank" href="https://charlesfrye.gitbook.io/docs-box/ref/data_types.py">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/master/wandb/data_types.py#L409-L419">View source</a>
 
 <pre><code>iterrows()</code></pre>
 
