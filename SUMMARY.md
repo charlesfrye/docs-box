@@ -44,6 +44,7 @@
   * [Numpy Example](integrations/numpy.md)
   * [JAX Example](integrations/jax.md)
 * [API Reference](ref/README.md)
+  * [agent](ref/agent.md)
   * [Run](ref/run/README.md)
     * [Init](ref/run/init.md)
     * [Config](ref/run/config.md)
