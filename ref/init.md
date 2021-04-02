@@ -1,14 +1,13 @@
 # init
 
-<!-- Insert buttons and diff -->
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/master/wandb/sdk/wandb_init.py#L553-L781)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_init.py#L553-L781)
 
 
 
 
-Start a new tracked run with `wandb.init()`.
+Start a new tracked run with <code>wandb.init()</code>.
 
 <pre><code>init(
     job_type: Optional[str] = None,
@@ -39,17 +38,16 @@ Start a new tracked run with `wandb.init()`.
 
 
 
-<!-- Placeholder for "Used in" -->
 
-In an ML training pipeline, you could add `wandb.init()`
+In an ML training pipeline, you could add <code>wandb.init()</code>
 to the beginning of your training script as well as your evaluation
 script, and each piece would be tracked as a run in W&B.
 
-`wandb.init()` spawns a new background process to log data to a run, and it
+<code>wandb.init()</code> spawns a new background process to log data to a run, and it
 also syncs data to wandb.ai by default so you can see live visualizations.
-Call `wandb.init()` to start a run before logging data with `wandb.log()`.
+Call <code>wandb.init()</code> to start a run before logging data with <code>wandb.log()</code>.
 
-`wandb.init()` returns a run object, and you can also access the run object
+<code>wandb.init()</code> returns a run object, and you can also access the run object
 with wandb.run.
 
 <!-- Tabular view -->
@@ -89,7 +87,7 @@ This sets wandb.config, a dictionary-like object for saving inputs
 to your job, like hyperparameters for a model or settings for a data
 preprocessing job. The config will show up in a table in the UI that
 you can use to group, filter, and sort runs. Keys should not contain
-`.` in their names, and values should be under 10 MB.
+<code>.</code> in their names, and values should be under 10 MB.
 If dict, argparse or absl.flags: will load the key value pairs into
 the wandb.config object.
 If str: will look for a yaml file by that name, and load config from
@@ -224,7 +222,7 @@ You can also pass a dict, json string, or yaml filename.
 </td>
 <td>
 (list, optional) string keys to exclude from
-`wandb.config`.
+<code>wandb.config</code>.
 </td>
 </tr><tr>
 <td>
@@ -349,7 +347,7 @@ if problem.
 <tr><th>Returns</th></tr>
 <tr>
 <td>
-A `Run` object.
+A <code>Run</code> object.
 </td>
 </tr>
 

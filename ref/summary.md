@@ -1,9 +1,8 @@
 # summary
 
-<!-- Insert buttons and diff -->
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/master/wandb/sdk/wandb_summary.py#L82-L133)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_summary.py#L82-L133)
 
 
 
@@ -16,7 +15,6 @@ Summary tracks single values for each run. By default, summary is set to the
 
 
 
-<!-- Placeholder for "Used in" -->
 last value of History.
 
 For example, `wandb.log({'accuracy': 0.9})` will add a new step to History and
@@ -36,7 +34,7 @@ mean, variance, and 95th percentile.
 
 #### Examples:
 
-```python
+```
 wandb.init(config=args)
 
 best_accuracy = 0

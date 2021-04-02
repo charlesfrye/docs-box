@@ -1,9 +1,8 @@
 # save
 
-<!-- Insert buttons and diff -->
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/master/wandb/sdk/wandb_run.py#L1031-L1120)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_run.py#L1027-L1116)
 
 
 
@@ -18,38 +17,22 @@ Ensure all files matching *glob_str* are synced to wandb with the policy specifi
 
 
 
-<!-- Placeholder for "Used in" -->
 
 
 <!-- Tabular view -->
 <table>
 <tr><th>Arguments</th></tr>
-
 <tr>
 <td>
-<code>glob_str</code>
-</td>
-<td>
-(string) a relative or absolute path to a unix glob or regular
+glob_str (string): a relative or absolute path to a unix glob or regular
 path.  If this isn't specified the method is a noop.
-</td>
-</tr><tr>
-<td>
-<code>base_path</code>
-</td>
-<td>
-(string) the base path to run the glob relative to
-</td>
-</tr><tr>
-<td>
-<code>policy</code>
-</td>
-<td>
-(string) on of `live`, `now`, or `end`
+base_path (string): the base path to run the glob relative to
+policy (string): on of <code>live</code>, <code>now</code>, or <code>end</code>
 - live: upload the file as it changes, overwriting the previous version
 - now: upload the file once now
 - end: only upload file when the run ends
 </td>
 </tr>
+
 </table>
 

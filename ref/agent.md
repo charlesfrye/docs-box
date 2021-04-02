@@ -1,9 +1,8 @@
 # agent
 
-<!-- Insert buttons and diff -->
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/master/wandb/wandb_agent.py#L525-L571)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/wandb_agent.py#L525-L571)
 
 
 
@@ -16,7 +15,6 @@ Generic agent entrypoint, used for CLI or jupyter.
 
 
 
-<!-- Placeholder for "Used in" -->
 
 Will run a function or program with configuration parameters specified
 by server.
