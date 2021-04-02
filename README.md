@@ -38,5 +38,5 @@ Here's a sample screenshot from a [Species Identification project](https://app.w
 If you're interested in example projects, we have a few resources:
 
 * [App Gallery](https://app.wandb.ai/gallery): A gallery of featured reports in our web app
-* [Example Projects](examples.md): Code and projects in GitHub and Colab
+* [Example Projects](https://github.com/charlesfrye/docs-box/tree/bfea5f551be5cc62d1588c780391dd5aaefa0aee/examples.md): Code and projects in GitHub and Colab
 

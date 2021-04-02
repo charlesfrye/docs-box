@@ -4,7 +4,7 @@ description: Call wandb.init() at the top of your script to start a new run
 
 # wandb.init\(\)
 
-Call `wandb.init()` once at the beginning of your script to initialize a new job. This creates a new run in W&B and launches a background process to sync data. 
+Call `wandb.init()` once at the beginning of your script to initialize a new job. This creates a new run in W&B and launches a background process to sync data.
 
 * **On Prem**: If you need a private cloud or local instance of W&B, see our [Self Hosted](../self-hosted/) offerings. 
 * **Automated Environments**: Most of these settings can also be controlled via [Environment Variables](environment-variables.md). This is often useful when you're running jobs on a cluster.
@@ -74,7 +74,7 @@ wandb.run.save()
 
 ### Save the git commit
 
-When wandb.init\(\) is called in your script, we automatically look for git information to save a link to your repo the SHA of the latest commit. The git information should show up on your [run page](../app/pages/run-page.md#overview-tab). If you aren't seeing it appear there, make sure that your script where you call wandb.init\(\) is located in a folder that has git information.
+When wandb.init\(\) is called in your script, we automatically look for git information to save a link to your repo the SHA of the latest commit. The git information should show up on your [run page](https://github.com/charlesfrye/docs-box/tree/bfea5f551be5cc62d1588c780391dd5aaefa0aee/app/pages/run-page.md#overview-tab). If you aren't seeing it appear there, make sure that your script where you call wandb.init\(\) is located in a folder that has git information.
 
 The git commit and command used to run the experiment are visible to you but are hidden to external users, so if you have a public project, these details will remain private.
 

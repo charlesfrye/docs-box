@@ -2,7 +2,7 @@
 
 ## Resources
 
-1. [Example Projects](../examples.md) - full scripts of models using Keras, PyTorch, and TensorFlow
+1. [Example Projects](https://github.com/charlesfrye/docs-box/tree/bfea5f551be5cc62d1588c780391dd5aaefa0aee/examples.md) - full scripts of models using Keras, PyTorch, and TensorFlow
 2. [Articles](https://www.wandb.com/articles) - blog posts about best practices and trends in machine learning
 3. [Slack](http://wandb.me/slack) - join our open forum to ask questions and discuss projects
 

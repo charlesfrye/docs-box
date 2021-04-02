@@ -12,7 +12,7 @@ import wandb
 wandb.init(config=tf.flags.FLAGS, sync_tensorboard=True)
 ```
 
-See our [example projects](../examples.md) for a complete script example.
+See our [example projects](https://github.com/charlesfrye/docs-box/tree/bfea5f551be5cc62d1588c780391dd5aaefa0aee/examples.md) for a complete script example.
 
 ## Custom Metrics
 
