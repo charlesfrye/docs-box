@@ -2,7 +2,7 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/apis/public.py#L1605-L1708)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/apis/public.py#L1636-L1739)
 
 
 
@@ -95,7 +95,7 @@ File is a class associated with a file saved by wandb.
 
 <h3 id="delete"><code>delete</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/apis/public.py#L1688-L1701">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/apis/public.py#L1719-L1732">View source</a>
 
 <pre><code>delete()</code></pre>
 
@@ -104,7 +104,7 @@ File is a class associated with a file saved by wandb.
 
 <h3 id="download"><code>download</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/apis/public.py#L1665-L1686">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/apis/public.py#L1696-L1717">View source</a>
 
 <pre><code>download(
     root=&#x27;.&#x27;, replace=(False)

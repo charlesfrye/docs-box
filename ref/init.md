@@ -2,7 +2,7 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_init.py#L553-L781)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_init.py#L555-L780)
 
 
 
@@ -169,15 +169,6 @@ ran this run.
 be stored. When you call download() on an artifact, this is the
 directory where downloaded files will be saved. By default this is
 the ./wandb directory.
-</td>
-</tr><tr>
-<td>
-<code>sync_tensorboard</code>
-</td>
-<td>
-(bool, optional) Whether to copy all TensorBoard logs
-to W&B (default: False).
-[Tensorboard](https://docs.wandb.com/integrations/tensorboard)
 resume (bool, str, optional): Sets the resuming behavior. Options:
 "allow", "must", "never", "auto" or None. Defaults to None.
 Cases:
@@ -281,7 +272,7 @@ mode if a user isn't logged in to W&B. (default: False)
 </td>
 <td>
 (bool, optional) Synchronize wandb logs from tensorboard or
-tensorboardX and saves the relevant events file. Defaults to false.
+tensorboardX and saves the relevant events file. (default: False)
 </td>
 </tr><tr>
 <td>

@@ -2,7 +2,7 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/data_types.py#L531-L712)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/data_types.py#L590-L771)
 
 
 
@@ -38,7 +38,7 @@ a file or an io object and a file_type which must be one of `'obj', 'gltf', 'bab
 
 
 The shape of the numpy array must be one of either:
-```
+```python
 [[x y z],       ...] nx3
 [x y z c],     ...] nx4 where c is a category with supported range [1, 14]
 [x y z r g b], ...] nx4 where is rgb is color

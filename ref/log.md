@@ -2,7 +2,7 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_run.py#L877-L1025)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_run.py#L893-L1057)
 
 
 
@@ -19,22 +19,26 @@ Log a dict to the global run's history.
 
 
 
-<code>wandb.log</code> can be used to log everything from scalars to histograms, media
-and matplotlib plots.
+Use <code>wandb.log</code> to log data from runs, such as scalars, images, video,
+histograms, and matplotlib plots.
 
 The most basic usage is `wandb.log({'train-loss': 0.5, 'accuracy': 0.9})`.
-This will save a history row associated with the run with train-loss=0.5
-and <code>accuracy=0.9</code>. The history values can be plotted on app.wandb.ai or
-on a local server. The history values can also be downloaded through
-the wandb API.
+This will save a history row associated with the run with `train-loss=0.5`
+and <code>accuracy=0.9</code>. Visualize logged data in the workspace at wandb.ai,
+or locally on a self-hosted instance of the W&B app:
+https://docs.wandb.ai/self-hosted
 
-Logging a value will update the summary values for any metrics logged.
-The summary values will appear in the run table at app.wandb.ai or
-a local server. If a summary value is manually set with for example
-`wandb.run.summary["accuracy"] = 0.9<code> </code>wandb.log` will no longer automatically
-update the run's accuracy.
+Export data to explore in a Jupyter notebook, for example, with the API:
+https://docs.wandb.ai/ref/public-api
 
-Logging values don't have to be scalars. Logging any wandb object is supported.
+Each time you call wandb.log(), this adds a new row to history and updates
+the summary values for each key logged. In the UI, summary values show
+up in the run table to compare single values across runs. You might want
+to update summary manually to set the *best* value instead of the *last*
+value for a given metric. After you finish logging, you can set summary:
+`wandb.run.summary["accuracy"] = 0.9`.
+
+Logged values don't have to be scalars. Logging any wandb object is supported.
 For example `wandb.log({"example": wandb.Image("myimage.jpg")})` will log an
 example image which will be displayed nicely in the wandb UI. See
 https://docs.wandb.com/library/reference/data_types for all of the different
@@ -59,22 +63,43 @@ the data on the client side or you may get degraded performance.
 <!-- Tabular view -->
 <table>
 <tr><th>Arguments</th></tr>
+
 <tr>
 <td>
-row (dict, optional): A dict of serializable python objects i.e <code>str</code>,
+<code>row</code>
+</td>
+<td>
+(dict, optional) A dict of serializable python objects i.e <code>str</code>,
 <code>ints</code>, <code>floats</code>, <code>Tensors</code>, <code>dicts</code>, or <code>wandb.data_types</code>.
-commit (boolean, optional): Save the metrics dict to the wandb server
+</td>
+</tr><tr>
+<td>
+<code>commit</code>
+</td>
+<td>
+(boolean, optional) Save the metrics dict to the wandb server
 and increment the step.  If false <code>wandb.log</code> just updates the current
 metrics dict with the row argument and metrics won't be saved until
 <code>wandb.log</code> is called with <code>commit=True</code>.
-step (integer, optional): The global step in processing. This persists
+</td>
+</tr><tr>
+<td>
+<code>step</code>
+</td>
+<td>
+(integer, optional) The global step in processing. This persists
 any non-committed earlier steps but defaults to not committing the
 specified step.
-sync (boolean, True): This argument is deprecated and currently doesn't
+</td>
+</tr><tr>
+<td>
+<code>sync</code>
+</td>
+<td>
+(boolean, True) This argument is deprecated and currently doesn't
 change the behaviour of <code>wandb.log</code>.
 </td>
 </tr>
-
 </table>
 
 
@@ -134,12 +159,21 @@ For more examples, see https://docs.wandb.com/library/log
 <!-- Tabular view -->
 <table>
 <tr><th>Raises</th></tr>
+
 <tr>
 <td>
-wandb.Error - if called before <code>wandb.init</code>
-ValueError - if invalid data is passed
+<code>wandb.Error</code>
+</td>
+<td>
+if called before <code>wandb.init</code>
+</td>
+</tr><tr>
+<td>
+<code>ValueError</code>
+</td>
+<td>
+if invalid data is passed
 </td>
 </tr>
-
 </table>
 

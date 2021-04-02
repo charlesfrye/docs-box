@@ -2,7 +2,7 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L51-L552)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L51-L602)
 
 
 
@@ -124,6 +124,14 @@ An <code>Artifact</code> object.
 Returns:
 (list): A list of the aliases associated with this artifact. The list is
 mutable and calling <code>save()</code> will persist all alias changes.
+</td>
+</tr><tr>
+<td>
+<code>commit_hash</code>
+</td>
+<td>
+Returns:
+(str): The artifact's commit hash which is used in http URLs
 </td>
 </tr><tr>
 <td>
@@ -249,7 +257,7 @@ be 'v0'.
 
 <h3 id="add"><code>add</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L392-L427">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L401-L436">View source</a>
 
 <pre><code>add(
     obj: WBValue,
@@ -322,7 +330,7 @@ table = artifact.get("my_table")
 
 <h3 id="add_dir"><code>add_dir</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L328-L361">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L337-L370">View source</a>
 
 <pre><code>add_dir(
     local_path: str,
@@ -401,7 +409,7 @@ None
 
 <h3 id="add_file"><code>add_file</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L307-L326">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L316-L335">View source</a>
 
 <pre><code>add_file(
     local_path: str,
@@ -492,7 +500,7 @@ the added manifest entry
 
 <h3 id="add_reference"><code>add_reference</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L363-L390">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L372-L399">View source</a>
 
 <pre><code>add_reference(
     uri: Union[ArtifactEntry, str],
@@ -614,7 +622,7 @@ artifact.add_reference('gs://mybucket/prefix', name='path')
 
 <h3 id="checkout"><code>checkout</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L453-L459">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L462-L468">View source</a>
 
 <pre><code>checkout(
     root: Optional[str] = None
@@ -656,7 +664,7 @@ artifact.
 
 <h3 id="delete"><code>delete</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L477-L483">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L521-L527">View source</a>
 
 <pre><code>delete() -> None</code></pre>
 
@@ -679,7 +687,7 @@ None
 
 <h3 id="download"><code>download</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L445-L451">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L454-L460">View source</a>
 
 <pre><code>download(
     root: str = None,
@@ -731,7 +739,7 @@ downloaded. Otherwise, the dependent artifacts are downloaded as needed.
 
 <h3 id="finalize"><code>finalize</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L518-L532">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L562-L576">View source</a>
 
 <pre><code>finalize()</code></pre>
 
@@ -754,7 +762,7 @@ None
 
 <h3 id="get"><code>get</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L437-L443">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L446-L452">View source</a>
 
 <pre><code>get(
     name: str
@@ -763,7 +771,7 @@ None
 Gets the WBValue object located at the artifact relative <code>name</code>.
 
 NOTE: This will raise an error unless the artifact has been fetched using
-<code>use_artifact</code> or the API.
+<code>use_artifact</code>, fetched using the API, or <code>wait()</code> has been called.
 
 <!-- Tabular view -->
 <table>
@@ -817,7 +825,7 @@ with wandb.init() as r:
 
 <h3 id="get_added_local_path_name"><code>get_added_local_path_name</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L493-L516">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L537-L560">View source</a>
 
 <pre><code>get_added_local_path_name(
     local_path: str
@@ -872,7 +880,7 @@ name = artifact.get_added_local_path_name('path/to/file.txt')
 
 <h3 id="get_path"><code>get_path</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L429-L435">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L438-L444">View source</a>
 
 <pre><code>get_path(
     name: str
@@ -881,7 +889,7 @@ name = artifact.get_added_local_path_name('path/to/file.txt')
 Gets the path to the file located at the artifact relative <code>name</code>.
 
 NOTE: This will raise an error unless the artifact has been fetched using
-<code>use_artifact</code> or the API.
+<code>use_artifact</code>, fetched using the API, or <code>wait()</code> has been called.
 
 <!-- Tabular view -->
 <table>
@@ -937,7 +945,7 @@ with wandb.init() as r:
 
 <h3 id="logged_by"><code>logged_by</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L284-L290">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L293-L299">View source</a>
 
 <pre><code>logged_by() -> "wandb.apis.public.Run"</code></pre>
 
@@ -946,7 +954,7 @@ Returns:
 
 <h3 id="new_file"><code>new_file</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L292-L305">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L301-L314">View source</a>
 
 <pre><code>@contextlib.contextmanager</code>
 <code>new_file(
@@ -1007,11 +1015,39 @@ the file will be automatically added to the artifact.
 
 <h3 id="save"><code>save</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L469-L475">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L478-L519">View source</a>
 
-<pre><code>save() -> None</code></pre>
+<pre><code>save(
+    project: Optional[str] = None,
+    settings: Optional['wandb.wandb_sdk.wandb_settings.Settings'] = None
+) -> None</code></pre>
 
-Persists any changes made to the artifact.
+Persists any changes made to the artifact. If currently in a run, that run will
+log this artifact. If not currently in a run, a run of type "auto" will be created
+to track this artifact.
+
+<!-- Tabular view -->
+<table>
+<tr><th>Arguments</th></tr>
+
+<tr>
+<td>
+<code>project</code>
+</td>
+<td>
+(str, optional) A project to use for the artifact in the case that a run is not already in context
+</td>
+</tr><tr>
+<td>
+<code>settings</code>
+</td>
+<td>
+(wandb.Settings, optional) A settings object to use when initializing an
+automatic run. Most commonly used in testing harness.
+</td>
+</tr>
+</table>
+
 
 
 <!-- Tabular view -->
@@ -1029,7 +1065,7 @@ None
 
 <h3 id="used_by"><code>used_by</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L276-L282">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L285-L291">View source</a>
 
 <pre><code>used_by() -> List['wandb.apis.public.Run']</code></pre>
 
@@ -1038,7 +1074,7 @@ Returns:
 
 <h3 id="verify"><code>verify</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L461-L467">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L470-L476">View source</a>
 
 <pre><code>verify(
     root: Optional[str] = None
@@ -1085,7 +1121,7 @@ artifact will be downloaded to './artifacts/<self.name>/'
 
 <h3 id="wait"><code>wait</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/sdk/wandb_artifacts.py#L485-L491">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L529-L535">View source</a>
 
 <pre><code>wait() -> ArtifactInterface</code></pre>
 
@@ -1103,6 +1139,69 @@ Artifact
 
 </table>
 
+
+
+<h3 id="__getitem__"><code>__getitem__</code></h3>
+
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/sdk/wandb_artifacts.py#L601-L602">View source</a>
+
+<pre><code>__getitem__(
+    name: str
+) -> Optional[WBValue]</code></pre>
+
+Gets the WBValue object located at the artifact relative <code>name</code>.
+
+NOTE: This will raise an error unless the artifact has been fetched using
+<code>use_artifact</code>, fetched using the API, or <code>wait()</code> has been called.
+
+<!-- Tabular view -->
+<table>
+<tr><th>Arguments</th></tr>
+
+<tr>
+<td>
+<code>name</code>
+</td>
+<td>
+(str) The artifact relative name to get
+</td>
+</tr>
+</table>
+
+
+
+<!-- Tabular view -->
+<table>
+<tr><th>Raises</th></tr>
+
+<tr>
+<td>
+<code>Exception</code>
+</td>
+<td>
+if problem
+</td>
+</tr>
+</table>
+
+
+
+#### Examples:
+
+Basic usage
+```
+artifact = wandb.Artifact('my_table', 'dataset')
+table = wandb.Table(columns=["a", "b", "c"], data=[[i, i*2, 2**i]])
+artifact["my_table"] = table
+
+wandb.log_artifact(artifact)
+```
+
+Retrieving an object:
+```
+artifact = wandb.use_artifact('my_table:latest')
+table = artifact["my_table"]
+```
 
 
 

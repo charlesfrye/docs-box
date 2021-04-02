@@ -2,7 +2,7 @@
 
 
 
-[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/data_types.py#L490-L628)
+[![](https://www.tensorflow.org/images/GitHub-Mark-32px.png)View source on GitHub](https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/data_types.py#L695-L839)
 
 
 
@@ -53,7 +53,7 @@ numpy array of audio data.
 
 <h3 id="durations"><code>durations</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/data_types.py#L592-L594">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/data_types.py#L797-L799">View source</a>
 
 <pre><code>@classmethod</code>
 <code>durations(
@@ -65,7 +65,7 @@ numpy array of audio data.
 
 <h3 id="path_is_reference"><code>path_is_reference</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/data_types.py#L535-L537">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/data_types.py#L740-L742">View source</a>
 
 <pre><code>@classmethod</code>
 <code>path_is_reference(
@@ -77,7 +77,7 @@ numpy array of audio data.
 
 <h3 id="resolve_ref"><code>resolve_ref</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/data_types.py#L608-L614">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/data_types.py#L813-L825">View source</a>
 
 <pre><code>resolve_ref()</code></pre>
 
@@ -86,7 +86,7 @@ numpy array of audio data.
 
 <h3 id="sample_rates"><code>sample_rates</code></h3>
 
-<a target="_blank" href="https://www.github.com/wandb/client/tree/3a0def97afe1def2b1a59786b4f0bbcac3f5dc4c/wandb/data_types.py#L596-L598">View source</a>
+<a target="_blank" href="https://www.github.com/wandb/client/tree/7bbc4a4eac8eeb2bf37a62ce519e0de61c67eadf/wandb/data_types.py#L801-L803">View source</a>
 
 <pre><code>@classmethod</code>
 <code>sample_rates(
