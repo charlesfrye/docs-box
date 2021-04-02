@@ -13,7 +13,7 @@ Use the Public API to export or update data that you have saved to W&B. Before u
 * **Export Data**: Pull down a dataframe for custom analysis in a Jupyter Notebook. Once you have explored the data, you can sync your findings by creating a new analysis run and logging results, for example: `wandb.init(job_type="analysis")`
 * **Update Existing Runs**: You can update the data logged in association with a W&B run. For example, you might want to update the config of a set of runs to include additional information, like the architecture or a hyperparameter that wasn't originally logged.
 
-See the [Generated Reference Docs](../ref/public-api/) for details on available functions.
+See the [Generated Reference Docs](https://github.com/charlesfrye/docs-box/tree/62d9038f970341b063901adb4364344e016c610f/ref/public-api/README.md) for details on available functions.
 
 ### Authentication
 
@@ -44,7 +44,7 @@ You can also modify or update the data of past runs. By default a single instanc
 
 ### Sampling
 
-The default history method samples the metrics to a fixed number of samples \(the default is 500, you can change this with the _samples_ argument\). If you want to export all of the data on a large run, you can use the run.scan\_history\(\) method. For more details see the [API Reference]().
+The default history method samples the metrics to a fixed number of samples \(the default is 500, you can change this with the _samples_ argument\). If you want to export all of the data on a large run, you can use the run.scan\_history\(\) method. For more details see the [API Reference](public-api-guide.md).
 
 ### Querying Multiple Runs
 
@@ -82,7 +82,7 @@ all_df.to_csv("project.csv")
 {% endtab %}
 
 {% tab title="MongoDB Style" %}
-The W&B API also provides a way for you to query across runs in a project with api.runs\(\). The most common use case is exporting runs data for custom analysis.  The query interface is the same as the one [MongoDB uses](https://docs.mongodb.com/manual/reference/operator/query).
+The W&B API also provides a way for you to query across runs in a project with api.runs\(\). The most common use case is exporting runs data for custom analysis. The query interface is the same as the one [MongoDB uses](https://docs.mongodb.com/manual/reference/operator/query).
 
 ```python
 runs = api.runs("username/project", {"$or": [{"config.experiment_name": "foo"}, {"config.experiment_name": "bar"}]})
@@ -107,16 +107,16 @@ In the UI, click on a run and then click the Overview tab on the run page to see
 
 ### Export data to visualize in matplotlib or seaborn
 
-Check out our [API examples]() for some common export patterns. You can also click the download button on a custom plot or on the expanded runs table to download a CSV from your browser.
+Check out our [API examples](public-api-guide.md) for some common export patterns. You can also click the download button on a custom plot or on the expanded runs table to download a CSV from your browser.
 
 ### Get the random run ID and run name from your script
 
-After calling `wandb.init()`  you can access the random run ID or the human readable run name from your script like this:
+After calling `wandb.init()` you can access the random run ID or the human readable run name from your script like this:
 
 * Unique run ID \(8 character hash\): `wandb.run.id`
 * Random run name \(human readable\): `wandb.run.name`
 
- If you're thinking about ways to set useful identifiers for your runs, here's what we recommend:
+  If you're thinking about ways to set useful identifiers for your runs, here's what we recommend:
 
 * **Run ID**: leave it as the generated hash. This needs to be unique across runs in your project.
 * **Run name**: This should be something short, readable, and preferably unique so that you can tell the difference between different lines on your charts.
@@ -127,7 +127,7 @@ After calling `wandb.init()`  you can access the random run ID or the human read
 
 ### Find the run path
 
-To use the public API, you'll often need the **Run Path** which is `"<entity>/<project>/<run_id>"`  In the app, open a run and click on the **Overview** tab to see the run path for any run.
+To use the public API, you'll often need the **Run Path** which is `"<entity>/<project>/<run_id>"` In the app, open a run and click on the **Overview** tab to see the run path for any run.
 
 ### Read metrics from a run
 
@@ -284,7 +284,7 @@ run.file("model-best.h5").download()
 
 ### Download all files from a run
 
-This finds all files associated with run ID uxte44z7 and saves them locally.  \(Note: you can also accomplish this by running wandb restore &lt;RUN\_ID&gt; from the command line.\)
+This finds all files associated with run ID uxte44z7 and saves them locally. \(Note: you can also accomplish this by running wandb restore &lt;RUN\_ID&gt; from the command line.\)
 
 ```python
 import wandb

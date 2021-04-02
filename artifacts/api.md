@@ -292,16 +292,16 @@ def train(i):
   """
   with wandb.init(group=group_name) as run:
     artifact = wandb.Artifact(name=artifact_name, type=artifact_type)
-    
+
     # Add data to a wandb table. In this case we use example data
     table = wandb.Table(columns=["a", "b", "c"], data=[[i, i*2, 2**i]])
-    
+
     # Add the table to folder in the artifact
     artifact.add(table, "{}/table_{}".format(parts_path, i))
-    
+
     # Upserting the artifact creates or appends data to the artifact
     run.upsert_artifact(artifact)
-  
+
 # Launch your runs in parallel
 result_ids = [train.remote(i) for i in range(num_parallel)]
 
@@ -313,11 +313,11 @@ ray.get(result_ids)
 # to mark it ready.
 with wandb.init(group=group_name) as run:
   artifact = wandb.Artifact(artifact_name, type=artifact_type)
-  
+
   # Create a "PartitionTable" pointing to the folder of tables
   # and add it to the artifact.
   artifact.add(wandb.data_types.PartitionedTable(parts_path), table_name)
-  
+
   # Finish artifact finalizes the artifact, disallowing future "upserts"
   # to this version.
   run.finish_artifact(artifact)

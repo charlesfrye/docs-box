@@ -185,7 +185,7 @@ Click Review and Create, and then, on the summary screen, click Create:
 
 #### Creating the blob container
 
-Go to  [Storage Accounts](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts) in the Azure portal, and click on your new storage account. In the storage account dashboard, click on Blob service &gt; Containers in the menu:
+Go to [Storage Accounts](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Storage%2FStorageAccounts) in the Azure portal, and click on your new storage account. In the storage account dashboard, click on Blob service &gt; Containers in the menu:
 
 ![](../.gitbook/assets/image%20%28102%29.png)
 
@@ -252,9 +252,9 @@ Now that we have a Slack application ready, we need to authorize for use as an O
 
 Under **Scopes**, supply the bot with the **incoming\_webhook** scope.
 
-![](../.gitbook/assets/image%20%28128%29%20%281%29%20%281%29.png)
+![](../.gitbook/assets/image%20%28128%29%20%281%29.png)
 
-Finally, configure the **Redirect URL** to point to your W&B installation. You should use the same value as what you set **Frontend Host** to ****in your local system settings. You can specify multiple URLs if you have different DNS mappings to your instance.
+Finally, configure the **Redirect URL** to point to your W&B installation. You should use the same value as what you set **Frontend Host** to _\*\*_in your local system settings. You can specify multiple URLs if you have different DNS mappings to your instance.
 
 ![](../.gitbook/assets/image%20%28127%29.png)
 

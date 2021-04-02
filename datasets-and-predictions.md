@@ -39,21 +39,21 @@ Filters are specified in the [mongodb aggregation language](https://docs.mongodb
 
 **Find examples that have &gt; 0.05 in the “road” column**
 
-`{$gt: ['$0.road', 0.05]}` 
+`{$gt: ['$0.road', 0.05]}`
 
 **Find examples that have more one or more “car” bounding box predictions**
 
-`{  
-  $gte: [   
-    {$size:   
-      {$filter:   
-        {input: '$0.pred_mask.boxes.ground_truth',  
-          as: 'box',  
-          cond: {$eq: ['$$box.class_id', 13]}  
-        }  
-      }  
-    },  
-  1]  
+`{    
+$gte: [    
+{$size:    
+{$filter:    
+{input: '$0.pred_mask.boxes.ground_truth',    
+as: 'box',    
+cond: {$eq: ['$$box.class_id', 13]}    
+}    
+}    
+},    
+1]    
 }`
 
 ### **Grouping**
@@ -76,9 +76,7 @@ You can use the “Quick filters” at the top to limit your results to examples
 
 ![](https://paper-attachments.dropbox.com/s_21D0DE4B22EAFE9CB1C9010CBEF8839898F3CCD92B5C6F38DBE168C2DB868730_1605673764298_image.png)
 
-  
-Try comparing and grouping at the same time. You’ll get a “multi-histogram”, where we use one color for each incoming table.  
-
+Try comparing and grouping at the same time. You’ll get a “multi-histogram”, where we use one color for each incoming table.
 
 ![](https://paper-attachments.dropbox.com/s_21D0DE4B22EAFE9CB1C9010CBEF8839898F3CCD92B5C6F38DBE168C2DB868730_1605673664913_image.png)
 
@@ -141,7 +139,6 @@ wandb.log_artifact(dataset_artifact)
 
 After running this code, you’ll be able to visualize the table in the W&B UI. Click on “dataset.table.json” in the artifact Files tab. Try grouping by “label” to get examples of each class in the “image” column.
 
-  
 `wandb.Image`
 
 You can construct wandb.Image objects, as described in our [wandb.log documentation](https://docs.wandb.com/library/log#images-and-overlays)**.**
@@ -165,7 +162,6 @@ predicted_image = wandb.Image(dataset_image, classes=class_set, masks={
             "predictions": {"path": <path_to_mask>}})
 ```
 
-  
 `wandb.Classes`
 
 Used to define a mapping from class id \(a number\) to label \(a string\):
@@ -174,8 +170,6 @@ Used to define a mapping from class id \(a number\) to label \(a string\):
 CLASSES = ['dog', 'cat']
 class_set = wandb.Classes([{'name': c, 'id': i} for i, c in enumerate(CLASSES)])
 ```
-
-
 
 `wandb.JoinedTable`
 

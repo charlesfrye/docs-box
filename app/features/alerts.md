@@ -8,9 +8,9 @@ description: >-
 
 W&B can post notifications to email or Slack whenever your runs crash, complete, or call [wandb.alert\(\)](../../library/wandb.alert.md).
 
-### User Alerts
+## User Alerts
 
-Set up notifications when a run finishes, crashes, or you call `wandb.alert()`. These apply to all projects where you launch runs, including both personal and team projects. 
+Set up notifications when a run finishes, crashes, or you call `wandb.alert()`. These apply to all projects where you launch runs, including both personal and team projects.
 
 In your [User Settings](https://wandb.ai/settings):
 
@@ -20,11 +20,11 @@ In your [User Settings](https://wandb.ai/settings):
 
 ![](../../.gitbook/assets/demo-connect-slack.png)
 
-### Team Alerts
+## Team Alerts
 
 Team admins can set up alerts for the team on the team settings page: wandb.ai/teams/`your-team`. These alerts apply to everyone on your team. We recommend using the **Slackbot** channel because it keeps the alerts private.
 
-### Changing Slack Channels
+## Changing Slack Channels
 
 To change what channel you're posting to, click **Disconnect Slack** and then reconnect, picking a different destination channel.
 

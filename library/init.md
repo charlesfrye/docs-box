@@ -4,7 +4,7 @@ description: Call wandb.init() at the top of your script to start a new run
 
 # wandb.init\(\)
 
-Call `wandb.init()` once at the beginning of your script to initialize a new job. This creates a new run in W&B and launches a background process to sync data. 
+Call `wandb.init()` once at the beginning of your script to initialize a new job. This creates a new run in W&B and launches a background process to sync data.
 
 * **On Prem**: If you need a private cloud or local instance of W&B, see our [Self Hosted](../self-hosted/) offerings. 
 * **Automated Environments**: Most of these settings can also be controlled via [Environment Variables](environment-variables.md). This is often useful when you're running jobs on a cluster.

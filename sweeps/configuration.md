@@ -39,25 +39,23 @@ wandb.log({"val_loss" : valid_loss})
 | goal | `minimize` or `maximize` \(Default is `minimize`\) |
 | target | Goal value for the metric you're optimizing. When any run in the sweep achieves that target value, the sweep's state will be set to **finished**. This means all agents with active runs will finish those jobs, but no new runs will be launched in the sweep. |
 
- ⚠️ **Can't optimize nested metrics**
+⚠️ **Can't optimize nested metrics**
 
 The metric you're optimizing to be at the **top level** of the config.
 
 This will **NOT** work:  
 _Sweep configuration_  
-`metric:   
-    name: my_metric.nested`   
+`metric:    
+name: my_metric.nested`  
 _Code_  
 `nested_metrics = {"nested": 4} wandb.log({"my_metric", nested_metrics}`
 
 Workaround: log the metric at the top level
 
 _Sweep configuration_  
-`metric:   
-    name: my_metric_nested`   
+`metric:    
+name: my_metric_nested`  
 _Code_`nested_metrics = {"nested": 4} wandb.log{{"my_metric", nested_metric} wandb.log({"my_metric_nested", nested_metric["nested"]})`
-
-
 
 **Examples**
 
