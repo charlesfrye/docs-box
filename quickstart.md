@@ -17,7 +17,7 @@ pip install wandb
 ```
 
 {% hint style="info" %}
-If you are training models in an automated environment where it's inconvenient to run shell commands, such as Google's CloudML, you should look at our [Environment Variables](library/environment-variables.md).
+If you are training models in an automated environment where it's inconvenient to run shell commands, such as Google's CloudML, you should look at our [Environment Variables](guides/environment-variables.md).
 {% endhint %}
 
 ## 2. Create Account
@@ -46,11 +46,11 @@ import wandb
 wandb.init(project="my-project")
 ```
 
-We automatically create the project for you if it doesn't exist. Runs of the training script above will sync to a project named "my-project". See the [wandb.init](library/init.md) documentation for more initialization options.
+We automatically create the project for you if it doesn't exist. Runs of the training script above will sync to a project named "my-project". See the [wandb.init](guides/init.md) documentation for more initialization options.
 
 ### Declare Hyperparameters
 
-It's easy to save hyperparameters with the [wandb.config](library/config.md) object.
+It's easy to save hyperparameters with the [wandb.config](guides/config.md) object.
 
 ```python
 wandb.config.dropout = 0.2
@@ -59,7 +59,7 @@ wandb.config.hidden_layer_size = 128
 
 ### Log Metrics
 
-Log metrics like loss or accuracy as your model trains \(in many cases we provide framework-specific defaults\). Log more complicated output or results like histograms, graphs, or images with [wandb.log](library/log.md).
+Log metrics like loss or accuracy as your model trains \(in many cases we provide framework-specific defaults\). Log more complicated output or results like histograms, graphs, or images with [wandb.log](guides/log.md).
 
 ```python
 def my_train_loop():
@@ -84,7 +84,7 @@ model.save(os.path.join(wandb.run.dir, "mymodel.h5"))
 Great! Now run your script normally and we'll sync the logs in a background process. Your terminal output, metrics, and files will be synced to the cloud, along with a record of your git state if you're running from a git repo.
 
 {% hint style="info" %}
-If you're testing and want to disable wandb syncing, set the [environment variable](library/environment-variables.md) WANDB\_MODE=dryrun
+If you're testing and want to disable wandb syncing, set the [environment variable](guides/environment-variables.md) WANDB\_MODE=dryrun
 {% endhint %}
 
 ## Next Steps

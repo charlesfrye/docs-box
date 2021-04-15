@@ -6,7 +6,7 @@ description: >-
 
 # Alerts
 
-W&B can post notifications to email or Slack whenever your runs crash, complete, or call [wandb.alert\(\)](../../library/wandb.alert.md).
+W&B can post notifications to email or Slack whenever your runs crash, complete, or call [wandb.alert\(\)](../../guides/wandb.alert.md).
 
 ## User Alerts
 
