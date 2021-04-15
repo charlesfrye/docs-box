@@ -33,12 +33,12 @@ wandb login
 Add a few lines to your script to log hyperparameters and metrics.
 
 {% hint style="info" %}
-Weights and Biases is framework agnostic, but if you are using a common ML framework, you may find framework-specific examples even easier for getting started. We've built framework-specific hooks to simplify the integration for [Keras](integrations/keras.md), [TensorFlow](integrations/tensorflow.md), [PyTorch](integrations/pytorch.md), [Fast.ai](integrations/fastai/), [Scikit](integrations/scikit.md), [XGBoost](integrations/xgboost.md), [Catalyst](integrations/catalyst.md).
+Weights and Biases is framework agnostic, but if you are using a common ML framework, you may find framework-specific examples even easier for getting started. We've built framework-specific hooks to simplify the integration for [Keras](guides/integrations/keras.md), [TensorFlow](guides/integrations/tensorflow.md), [PyTorch](guides/integrations/pytorch.md), [Fast.ai](guides/integrations/fastai/), [Scikit](guides/integrations/scikit.md), [XGBoost](guides/integrations/xgboost.md), [Catalyst](guides/integrations/catalyst.md).
 {% endhint %}
 
 ### Initialize W&B
 
-Initialize `wandb` at the beginning of your script, before you start logging. Some integrations, like our [Hugging Face](integrations/huggingface.md) integration, include wandb.init\(\) internally.
+Initialize `wandb` at the beginning of your script, before you start logging. Some integrations, like our [Hugging Face](guides/integrations/huggingface.md) integration, include wandb.init\(\) internally.
 
 ```python
 # Inside my model training code
@@ -94,7 +94,7 @@ Now you've got the instrumentation working, here's a quick overview of cool feat
 1. **Project Page**: Compare lots of different experiments in a project dashboard. Every time you run a model in a project, a new line appears in the graphs and in the table. Click the table icon on the left sidebar to expand the table and see all your hyperparameters and metrics. Create multiple projects to organize your runs, and use the table to add tags and notes to your runs.
 2. **Custom Visualizations**: Add parallel coordinates charts, scatter plots, and other advanced visualizations to explore your results.
 3. \*\*\*\*[**Reports**](reports.md): Add a Markdown panel to describe your research results alongside your live graphs and tables. Reports make it easy to share a snapshot of your project with collaborators, your professor, or your boss!
-4. \*\*\*\*[**Integrations**](integrations/): We have special integrations for popular frameworks like PyTorch, Keras, and XGBoost.
+4. \*\*\*\*[**Integrations**](guides/integrations/): We have special integrations for popular frameworks like PyTorch, Keras, and XGBoost.
 5. **Showcase**: Interested in sharing your research? We're always working on blog posts to highlight the amazing work of our community. Message us at contact@wandb.com.
 
 ### [Contact us with questions →](company/getting-help.md)

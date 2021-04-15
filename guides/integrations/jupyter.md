@@ -39,7 +39,7 @@ After running `wandb.init()` , start a new cell with `%%wandb` to see live graph
 
 Try it for yourself in this [quick example script →](https://bit.ly/wandb-jupyter-widgets-colab)
 
-![](../.gitbook/assets/jupyter-widget.png)
+![](../../.gitbook/assets/jupyter-widget.png)
 
 As an alternative to the `%%wandb` decorator, after running `wandb.init()` you can end any cell with `wandb.run` to show in-line graphs:
 

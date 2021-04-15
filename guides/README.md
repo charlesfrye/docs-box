@@ -6,11 +6,11 @@ description: >-
 
 # Guides
 
-Use the `wandb` Python library to track machine learning experiments with a few lines of code. If you're using a popular framework like [PyTorch](../integrations/pytorch.md) or [Keras](../integrations/keras.md), we have lightweight [integrations](../integrations/).
+Use the `wandb` Python library to track machine learning experiments with a few lines of code. If you're using a popular framework like [PyTorch](integrations/pytorch.md) or [Keras](integrations/keras.md), we have lightweight [integrations](integrations/).
 
 ## Integrating W&B in your script
 
-Below are the simple building blocks to track an experiment with W&B. We also have a whole host of special integrations for [PyTorch](../integrations/pytorch.md), [Keras](../integrations/keras.md), [Scikit](../integrations/scikit.md), etc. See [**Integrations**](../integrations/).
+Below are the simple building blocks to track an experiment with W&B. We also have a whole host of special integrations for [PyTorch](integrations/pytorch.md), [Keras](integrations/keras.md), [Scikit](integrations/scikit.md), etc. See [**Integrations**](integrations/).
 
 1. \*\*\*\*[**wandb.init\(\)**](init.md): Initialize a new run at the top of your script. This returns a Run object and creates a local directory where all logs and files are saved, then streamed asynchronously to a W&B server. If you want to use a private server instead of our hosted cloud server, we offer [Self-Hosting](../self-hosted/).
 2. \*\*\*\*[**wandb.config**](config.md): Save a dictionary of hyperparameters such as learning rate or model type. The model settings you capture in config are useful later to organize and query your results.
