@@ -2,7 +2,7 @@
 description: Project management and collaboration tools for machine learning projects
 ---
 
-# Share Results
+# Collaborative Reports
 
 Reports let you organize visualizations, describe your findings, and share updates with collaborators.
 

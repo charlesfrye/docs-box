@@ -2,7 +2,7 @@
 description: 'Scriptable alerts triggered from Python, sent to you via Slack or email'
 ---
 
-# Set Up Alerts
+# Alerts
 
 Send a Slack or email alert, triggered from your Python script.
 

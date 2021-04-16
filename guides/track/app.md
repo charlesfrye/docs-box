@@ -2,7 +2,7 @@
 description: Machine learning experiment tracking and visualizations
 ---
 
-# Create Dashboards
+# Dashboards
 
 Use the Weights & Biases Dashboard as a central place to organize and visualize results from your machine learning models.
 
@@ -20,7 +20,7 @@ If you hand off a project to a collaborator or take a vacation, W&B makes it eas
 
 Compare each training run and see what hyperparameters changed. Search, filter, sort, and group results from different models. It's easy to look over thousands of model versions and find the best performing models for different tasks.
 
-![](../.gitbook/assets/image%20%2819%29.png)
+![](../../.gitbook/assets/image%20%2819%29.png)
 
 ## Reproduce Models
 

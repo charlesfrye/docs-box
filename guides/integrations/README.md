@@ -4,5 +4,5 @@ description: >-
   workflows.
 ---
 
-# Integrate W&B
+# Integrations
 

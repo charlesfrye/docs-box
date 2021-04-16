@@ -2,7 +2,7 @@
 description: Hyperparameter search and model optimization
 ---
 
-# Tune Hyperparameters
+# Hyperparameter Tuning
 
 Use Weights & Biases Sweeps to automate hyperparameter optimization and explore the space of possible models.
 

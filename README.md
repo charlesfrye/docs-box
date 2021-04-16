@@ -12,7 +12,7 @@ Our tools work with your machine learning infrastructure: AWS, GCP, Kubernetes, 
 
 ## Tools
 
-1. [**Dashboard**](guides/app.md): Track experiments, visualize results
+1. [**Dashboard**](guides/track/app.md): Track experiments, visualize results
 2. [**Reports**](guides/reports.md): Save and share reproducible findings
 3. [**Sweeps**](guides/sweeps/): Optimize models with hyperparameter tuning
 4. [**Artifacts**](guides/artifacts/): Dataset and model versioning, pipeline tracking

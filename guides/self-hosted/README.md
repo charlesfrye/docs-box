@@ -2,7 +2,7 @@
 description: Self Hosted installations for projects with sensitive data
 ---
 
-# Host Your Own wandb
+# Self-Hosted
 
 W&B Local is the self hosted version of [Weights & Biases](https://app.wandb.ai). It makes collaborative experiment tracking possible for enterprise machine learning teams, giving you a way to keep all training data and metadata within your organization's network.
 
