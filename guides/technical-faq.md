@@ -43,7 +43,7 @@ By default, we don't log any of your dataset examples. You can explicitly turn t
 There's two ways to turn off code logging:
 
 1. Set **WANDB\_DISABLE\_CODE** to **true** to turn off all code tracking. We won't pick up the git SHA or the diff patch.
-2. Set **WANDB\_IGNORE\_GLOBS** to **\*.patch** to turn off syncing the diff patch to our servers. You'll still have it locally and be able to apply it with the [wandb restore](cli.md#restore-the-state-of-your-code) command.
+2. Set **WANDB\_IGNORE\_GLOBS** to **\*.patch** to turn off syncing the diff patch to our servers. You'll still have it locally and be able to apply it with the [wandb restore]() command.
 
 ## Does logging block my training?
 
@@ -89,7 +89,7 @@ If you run into issues with this install, please let us know. This Anaconda [doc
 
 ## How do I stop wandb from writing to my terminal or my jupyter notebook output?
 
-Set the environmental variable [WANDB\_SILENT](environment-variables.md).
+Set the environmental variable [WANDB\_SILENT](track/advanced/environment-variables.md).
 
 In a notebook:
 
@@ -113,7 +113,7 @@ If you're seeing SSL or network errors:`wandb: Network error (ConnectionError), 
 
 1. Upgrade your SSL certificate. If you're running the script on an Ubuntu server, run `update-ca-certificates`  We can't sync training logs without a valid SSL certificate because it's a security vulnerability.
 2. If your network is flakey, run training in [offline mode](https://docs.wandb.com/resources/technical-faq#can-i-run-wandb-offline) and sync the files to us from a machine that has Internet access.
-3. Try running [W&B Local](../self-hosted/local.md), which operates on your machine and doesn't sync files to our cloud servers.
+3. Try running [W&B Local](self-hosted/local.md), which operates on your machine and doesn't sync files to our cloud servers.
 
 **SSL CERTIFICATE\_VERIFY\_FAILED:** this error could be due to your company's firewall. You can set up local CAs and then use:
 
@@ -137,9 +137,9 @@ Using wandb.log\({'final\_accuracy': 0.9} will work fine for this. By default wa
 
 There are several ways to do this.
 
-For complicated workflows, we recommend using multiple runs and setting group parameter in [wandb.init](init.md) to a unique value in all the processes that are run as part of a single experiment. The [runs table](https://github.com/charlesfrye/docs-box/tree/bfea5f551be5cc62d1588c780391dd5aaefa0aee/app/pages/run-page.md) will automatically group the table by the group ID and the visualizations will behave as expected. This will allow you to run multiple experiments and training runs as separate processes log all the results into a single place.
+For complicated workflows, we recommend using multiple runs and setting group parameter in [wandb.init](track/launch.md) to a unique value in all the processes that are run as part of a single experiment. The [runs table](https://github.com/charlesfrye/docs-box/tree/bfea5f551be5cc62d1588c780391dd5aaefa0aee/app/pages/run-page.md) will automatically group the table by the group ID and the visualizations will behave as expected. This will allow you to run multiple experiments and training runs as separate processes log all the results into a single place.
 
-For simpler workflows, you can call wandb.init with resume=True and id=UNIQUE\_ID and then later call wandb.init with the same id=UNIQUE\_ID. Then you can log normally with [wandb.log](log.md) or wandb.summary and the runs values will update.
+For simpler workflows, you can call wandb.init with resume=True and id=UNIQUE\_ID and then later call wandb.init with the same id=UNIQUE\_ID. Then you can log normally with [wandb.log](track/log.md) or wandb.summary and the runs values will update.
 
 At any point you can always use the[ API](technical-faq.md) to add additional evaluation metrics.
 

@@ -12,12 +12,12 @@ Use the `wandb` Python library to track machine learning experiments with a few 
 
 Below are the simple building blocks to track an experiment with W&B. We also have a whole host of special integrations for [PyTorch](integrations/pytorch.md), [Keras](integrations/keras.md), [Scikit](integrations/scikit.md), etc. See [**Integrations**](integrations/).
 
-1. \*\*\*\*[**wandb.init\(\)**](init.md): Initialize a new run at the top of your script. This returns a Run object and creates a local directory where all logs and files are saved, then streamed asynchronously to a W&B server. If you want to use a private server instead of our hosted cloud server, we offer [Self-Hosting](../self-hosted/).
-2. \*\*\*\*[**wandb.config**](config.md): Save a dictionary of hyperparameters such as learning rate or model type. The model settings you capture in config are useful later to organize and query your results.
-3. \*\*\*\*[**wandb.log\(\)**](log.md): Log metrics over time in a training loop, such as accuracy and loss. By default, when you call wandb.log\(\) it appends a new step to the history object and updates the summary object. 
+1. \*\*\*\*[**wandb.init\(\)**](track/launch.md): Initialize a new run at the top of your script. This returns a Run object and creates a local directory where all logs and files are saved, then streamed asynchronously to a W&B server. If you want to use a private server instead of our hosted cloud server, we offer [Self-Hosting](self-hosted/).
+2. \*\*\*\*[**wandb.config**](track/config.md): Save a dictionary of hyperparameters such as learning rate or model type. The model settings you capture in config are useful later to organize and query your results.
+3. \*\*\*\*[**wandb.log\(\)**](track/log.md): Log metrics over time in a training loop, such as accuracy and loss. By default, when you call wandb.log\(\) it appends a new step to the history object and updates the summary object. 
    * **history**: An array of dictionary-like objects that tracks metrics over time. These time series values are shown as default line plots in the UI.
    * **summary**: By default, the final value of a metric logged with wandb.log\(\). You can set the summary for a metric manually to capture the highest accuracy or lowest loss instead of the final value. These values are used in the table, and plots that compare runs — for example, you could visualize at the final accuracy for all runs in your project.
-4. \*\*\*\*[**Artifacts**](../artifacts/): Save outputs of a run, like the model weights or a table of predictions. This lets you track not just model training, but all the pipeline steps that affect the final model.
+4. \*\*\*\*[**Artifacts**](artifacts/): Save outputs of a run, like the model weights or a table of predictions. This lets you track not just model training, but all the pipeline steps that affect the final model.
 
 ## Best Practices
 
@@ -49,7 +49,7 @@ wandb.init(
 
 ## What data is logged?
 
-All the data logged from your script is saved locally to your machine in a **wandb** directory, then sync'd to the W&B cloud or your [private server](../self-hosted/).
+All the data logged from your script is saved locally to your machine in a **wandb** directory, then sync'd to the W&B cloud or your [private server](self-hosted/).
 
 ### **Logged Automatically**
 
